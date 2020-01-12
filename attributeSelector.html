@@ -1,0 +1,102 @@
+
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+ <style type="text/css">
+
+     [type='radio']
+     {
+     	margin: 20px
+     }
+     [type='checkbox']
+     {
+     	margin: 10px 0px 15px 0px;
+     }
+    #heading
+    {
+    	color: green;
+    }
+
+    #catPhotoForm
+    {
+    	background-color: green;
+    }
+
+	.largerImage
+	{
+		width: 300px;
+	}
+	.smallerImage
+	{
+		width: 200;
+	}
+	.redText
+	{
+		color: red;
+
+	}
+	.thickBorderGreen
+	{
+		border-color: green;
+		border-width: 10px;
+		border-style: solid;
+		border-radius: 50%;
+	}
+
+	.silverBackground
+	{
+		background-color: silver;
+	}
+
+	p
+	{
+		font-size: 16px;
+		font-family: monospace;
+	}
+	
+	h2
+	{
+		font-family: Lobster, monospace;
+	}
+	
+	</style>
+
+<h2 class="redText" id="heading">CatPhotoApp</h2>
+<!--
+	id has higher priority than classes
+-->
+
+<main>
+	
+	<p class="redText">Click here to view more<a href="#">cat photos</a>.</p>
+	<a href="#"><img class="largerImage thickBorderGreen" src="https://img.thrfun.com/img/081/592/orange_tabby_x2.jpg"  alt="A cute orange cat lying on its back."></a>
+
+	<div class="silverBackground">
+		<p>Things Cat love</p>
+		<ul>
+			<li>cat nip</li>
+			<li>laser pointer</li>
+			<li>lasanga</li>
+		</ul>
+
+		<p>Top 3 things cats hate</p>
+		<ol>
+			<li>flea treatment</li>
+			<li>thunder</li>
+			<li>others cat</li>
+			
+		</ol>
+	</div>
+
+	<form id="catPhotoForm" action="/submit-cat-photo">
+	<label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
+	<label><input type="radio" name="indoor-outdoor" checked>Outdoor</label>
+	<label><input type="radio" name="indoor-outdoor" checked>Loving</label>
+	<label><input type="checkbox" name="indoor-outdoor" checked>Lazy</label>
+	<label><input type="checkbox" name="indoor-outdoor" checked>Energetic</label>
+	<input type="text" placeholder="cat photo url " required>
+	<button type="submit">Submit</button>
+</form>
+
+</main>
+
+
