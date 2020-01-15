@@ -1,0 +1,41 @@
+<style type="text/css">
+	
+	.color
+	{
+		--box-color:pink;
+	}
+	.box-1
+	{
+		width: 150px;
+		height: 120px;
+		background: red;
+		/*position: static;
+		static->default position of browser*/
+		margin: auto;
+		/*middle of the display*/
+
+		
+	}
+
+	.box-2
+	{
+		width: 300;
+		height: 240;
+		background: var(--box-color,black);
+		/* black->fallback value(works when variable value not found) */
+		position: relative;
+		top: 100px;
+		bottom: 20px;
+		left: 10px;
+		right: 10px;
+	}
+
+
+
+</style>
+<body>
+<div class="box-1"></div>
+<div class="box-2 color"></div>
+
+</body>
+  

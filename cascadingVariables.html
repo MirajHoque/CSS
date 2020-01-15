@@ -1,0 +1,57 @@
+<style type="text/css"> 
+
+	:root
+	{
+		--boxes-color: pink;
+	}
+	body
+	{
+		background: var(--boxes-color, black);
+	}
+	.color
+	{
+		--text-color: green;
+	}
+	.box-1
+	{
+		width: 150px;
+		height: 120px;
+		background: red;
+		/*position: static;
+		static->default position of browser*/
+		margin: auto;
+		/*middle of the display*/
+
+		
+	}
+
+	.box-2
+	{
+		width: 300;
+		height: 240;
+		background: black;
+		//color: var(--text-color, gray)
+		/* black->fallback value(works when variable value not found) */
+		position: relative;
+		top: 100px;
+		bottom: 20px;
+		left: 10px;
+		right: 10px;
+	}
+	.box-3
+	{
+		width: 500;
+		height: 475;
+
+	}
+
+
+
+</style>
+<body>
+<div class="box-1"></div>
+<div class="box-2 color"> text</div>
+<div class="box-3 "></div>
+
+</body>
+  
